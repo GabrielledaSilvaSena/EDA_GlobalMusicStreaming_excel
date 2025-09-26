@@ -63,13 +63,23 @@ El conjunto de datos contiene información detallada sobre los usuarios, sus há
 -   **Repeat_Song_Rate**: Porcentaje de repetición de canciones.
 
 ### **5. Recap sesiones**
-### Sesión 1
+### Version 1
 - Creación del repositorio
 - Generación de archivo README
 - Creación de informe mediante Claude.AI para simular Informe_Global_Music_Streaming
 - Creación sistema carpetas del repo
 - Se añadió el conjunto de datos original 'Global_Music_Streaming_Listener_Preferences.csv'
 - Se creó el excel 'Carga_tranf_datos.xlsx', se cargó el conjunto de datos original mediante Power Query
+
+### Version 2
+- Se comprobó la presencia de duplicados. No se encontraron registros duplicados en el dataset.
+- Se verificó la consistencia y completitud de los datos en todas las columnas principales.
+- Se convirtieron los datos de "Hours Streamed Per Day" de minutos a formato decimal de horas.
+- Se comprobaron los datos de "Age", "Number of Songs Liked", "Discover Weekly Engagement %" y "Repeat Song Rate %". Al ser columnas numéricas se verificó que no hubiera valores nulos o texto en dichas columnas.
+- Se procesaron los datos de "Discover Weekly Engagement %" y "Repeat Song Rate %" convirtiéndolos a porcentajes legibles.
+- Se categorizó la columna "Age" creando rangos de edad en "Age_Range": "Youth", "Young Adults", "Adults" y "Seniors".
+- Se crearon las columnas categóricas "Discover Weekly_Categories" y "Repeat Song Rate_Categories" basadas en los valores porcentuales correspondientes.
+- Se verificó la coherencia de los datos en las columnas "Streaming Platform", "Country", "Top Genre" y "Subscription Type".
 
 ### **6. Próximos Pasos**
 
