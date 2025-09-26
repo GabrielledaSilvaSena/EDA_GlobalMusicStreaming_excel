@@ -22,8 +22,9 @@ En resumen, la creación de estos dashboards será clave para **mejorar la exper
 ### **3. Estructura Repo**
 ```bash
 ├── data
-├── Global_Music_Streaming_Listener_Preferences.csv #Datos originales
+├──── Global_Music_Streaming_Listener_Preferences.csv #Datos originales
 └── Excels
+├──── Carga_tranf_datos.xlsx #Excel con los Datos originales
 ```
 
 
@@ -63,11 +64,12 @@ El conjunto de datos contiene información detallada sobre los usuarios, sus há
 
 ### **5. Recap sesiones**
 ### Sesión 1
-- Creacion del repositorio
-- Generacion de archivo README
-- Creacion de informe mediante Claude.AI para simular Informe_Global_Music_Streaming
-- Creacion sistema carpetas del repo
-- Se añadio el conjunto de datos original 'Global_Music_Streaming_Listener_Preferences.csv'
+- Creación del repositorio
+- Generación de archivo README
+- Creación de informe mediante Claude.AI para simular Informe_Global_Music_Streaming
+- Creación sistema carpetas del repo
+- Se añadió el conjunto de datos original 'Global_Music_Streaming_Listener_Preferences.csv'
+- Se creó el excel 'Carga_tranf_datos.xlsx', se cargó el conjunto de datos original mediante Power Query
 
 ### **6. Próximos Pasos**
 
