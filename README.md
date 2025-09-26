@@ -67,7 +67,7 @@ El conjunto de datos contiene información detallada sobre los usuarios, sus há
 - Generacion de archivo README
 - Creacion de informe mediante Claude.AI para simular Informe_Global_Music_Streaming
 - Creacion sistema carpetas del repo
-- Se añadio el conjunto de datos original Global_Music_Streaming_Listener_Preferences.csv
+- Se añadio el conjunto de datos original 'Global_Music_Streaming_Listener_Preferences.csv'
 
 ### **6. Próximos Pasos**
 
