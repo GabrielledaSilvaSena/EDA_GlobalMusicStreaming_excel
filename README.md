@@ -62,7 +62,7 @@ El conjunto de datos contiene información detallada sobre los usuarios, sus há
 
 -   **Repeat_Song_Rate**: Porcentaje de repetición de canciones.
 
-### **5. Recap sesiones**
+### **5. Recap versiones**
 ### Version 1
 - Creación del repositorio
 - Generación de archivo README
@@ -81,7 +81,47 @@ El conjunto de datos contiene información detallada sobre los usuarios, sus há
 - Se crearon las columnas categóricas "Discover Weekly_Categories" y "Repeat Song Rate_Categories" basadas en los valores porcentuales correspondientes.
 - Se verificó la coherencia de los datos en las columnas "Streaming Platform", "Country", "Top Genre" y "Subscription Type".
 
-### **6. Próximos Pasos**
+
+### Version 5
+
+- Se realizó un análisis bivariante sistemático entre las variables categóricas y numéricas clave del dataset para identificar patrones de comportamiento en el streaming musical.
+- Se analizó la relación entre "Age_Range" y "Hours Streamed Per Day_Decimal" mediante un gráfico de barras, identificando que "Young Adults" presenta el mayor promedio de horas de streaming diario (101.87% del % total de columnas).
+- Se exploró "Discover Weekly_Categories" versus "Hours Streamed Per Day_Decimal" con un gráfico de columnas, donde la categoría "High" mostró el mayor consumo (101.25% del % total de columnas).
+- Se examinó "Top Genre" respecto a "Hours Streamed Per Day_Decimal" mediante un gráfico de barras, destacando "Rock" con el mayor tiempo de streaming (104.88% del % total de columnas).
+- Se comparó "Subscription Type" con "Hours Streamed Per Day_Decimal" usando un gráfico de columnas, observando que los usuarios "Free" tienen un consumo ligeramente superior (100.11% del % total de columnas).
+- Se evaluó la relación entre "Subscription Type" y "Discover Weekly Engagement %" mediante un gráfico de columnas, donde los usuarios "Free" mostraron mayor engagement (100.47% del % total de columnas).
+- Se analizó "Country" versus "Hours Streamed Per Day_Decimal" con un gráfico de columnas, identificando a Alemania con el mayor consumo por país (104.10% del % total de columnas).
+- Se creó una tabla dinámica cruzada entre "Country" y "Top Genre" calculando el % total de columnas, destacando con formato condicional amarillo el género con mayor porcentaje en cada país (fila).
+- Se exploró "Country" y "Subscription Type" mediante un gráfico de columnas, revelando que Australia lidera en suscripciones "Free" (11% del % total de columnas), mientras que UK y Canadá destacan en "Premium" (11% del % total de columnas cada uno), los demás países oscilan entre 9-10% del % total de columnas.
+- Se comparó "Age_Range" con "Number of Songs Liked", donde el grupo "Adults" mostró el mayor porcentaje (40% del % total de columnas).
+- Se analizó "Top Genre" con "Repeat Song Rate %", identificando que EDM, Jazz y Reggae presentan las tasas más altas de repetición (11% del % total de columnas cada uno).
+- Se examinó "Listening Time" versus "Top Genre" para entender las preferencias por momento del día: "Country" domina en "Afternoon" (38% del % total de columnas), EDM y Rock empatan en "Morning" (35% del % total de columnas cada uno), y "Reggae" lidera en "Night" (39% del % total de columnas) destacando con formato condicional amarillo el género con mayor porcentaje en cada país (fila).
+- Se evaluó "Listening Time" con "Hours Streamed Per Day_Decimal", determinando que el periodo "Afternoon" concentra el mayor tiempo de streaming (100.61% del % total de columnas).
+
+### **6. Análisis de conclusiones**
+
+### Análisis 3. Evaluación del Ecosistema de Streaming Musical.
+
+- **Crisis del Modelo de Monetización:**
+los resultados revelan una falla crítica en la estrategia de monetización de la plataforma. Los usuarios Free consumen prácticamente las mismas horas que los usuarios Premium (100.11% vs 99.9%), evidenciando la ausencia de una propuesta de valor diferenciadora efectiva para la suscripción paga. Adicionalmente, los usuarios Free utilizan más las funcionalidades de Discover Weekly (100.47%) que los Premium, indicando que las características distintivas del servicio pago no están generando el engagement esperado ni justificando la inversión de los usuarios.
+- **Segmentación Demográfica y Geográfica:**
+el análisis demográfico identifica a los Young Adults como el segmento más valioso, con un consumo 101.87% superior al promedio general. Los Adults emergen como el segmento más activo socialmente, representando el 40% del total de canciones marcadas como favoritas, lo que sugiere mayor propensión al engagement con funcionalidades sociales. A nivel geográfico, Germany se posiciona como el mercado más engaged con 104.10% de consumo, mientras que la distribución Premium se concentra equilibradamente en Australia, UK y Canada (11% cada uno), revelando oportunidades de expansión en mercados con penetración del 9-10%.
+
+- **Estrategia de Contenido y Géneros Musicales:**
+Rock domina como el género de mayor engagement con 104.88% de consumo, estableciéndose como la categoría musical más valiosa para la retención de usuarios y la generación de horas de reproducción. En contraste, EDM, Jazz y Reggae comparten el liderazgo en fidelización con 11% de repeat rate cada uno, sugiriendo que estos géneros, aunque no generen el mayor volumen de horas, crean mayor lealtad de audiencia. Esta dualidad entre volumen y fidelización presenta oportunidades para estrategias de contenido diferenciadas según objetivos específicos.
+
+- **Patrones Temporales y Programación de Contenido:**
+los datos revelan patrones de consumo claramente diferenciados por horarios. El consumo se concentra en las tardes con 100.61% por encima del promedio, estableciendo esta franja como el momento óptimo para lanzamientos y campañas promocionales. Las preferencias musicales varían significativamente según el horario: Country domina las tardes (38%), EDM y Rock se equilibran en las mañanas (35% cada uno), y Reggae lidera las noches (39%). Esta segmentación temporal indica la necesidad de implementar programación específica por franjas horarias para maximizar el engagement.
+- **Efectividad de Algoritmos de Recomendación:**
+los usuarios con High engagement en Discover Weekly apenas superan el promedio de consumo general (101.25%), sugiriendo que los algoritmos de recomendación no están generando el impacto esperado en el comportamiento de escucha total. La correlación débil entre engagement con recomendaciones y tiempo de consumo indica que los sistemas de recomendación requieren optimización para convertir el descubrimiento de contenido en mayor tiempo de permanencia en la plataforma.
+
+- **Distribución Global y Estrategia de Expansión:**
+el análisis de distribución por países muestra que la base de usuarios está equilibradamente repartida entre las diferentes naciones, con cada país representando aproximadamente entre 9-11% del total de usuarios. Australia lidera ligeramente con usuarios Free (11%), mientras que UK y Canada destacan en usuarios Premium (11% cada uno), pero estas diferencias son mínimas y no indican concentración significativa. La distribución de preferencias musicales por país revela patrones culturales distintivos que pueden aprovecharse para desarrollar estrategias de contenido localizado, donde cada región muestra preferencias particulares por ciertos géneros musicales.
+
+- **COMPORTAMIENTO DE FIDELIZACIÓN:**
+la correlación entre descubrimiento de nuevo contenido y repetición de canciones muestra que ciertos géneros como EDM, Jazz y Reggae logran el equilibrio óptimo entre novedad y fidelización, mientras que otros géneros podrían beneficiarse de estrategias específicas para mejorar su capacidad de retención de audiencia.
+
+### **7. Próximos Pasos**
 
 1.  **Análisis Exploratorio de Datos (EDA)**: Realizar un análisis inicial de los datos, identificando patrones y posibles problemas (valores faltantes, outliers, etc.).
 
