@@ -81,6 +81,21 @@ El conjunto de datos contiene información detallada sobre los usuarios, sus há
 - Se crearon las columnas categóricas "Discover Weekly_Categories" y "Repeat Song Rate_Categories" basadas en los valores porcentuales correspondientes.
 - Se verificó la coherencia de los datos en las columnas "Streaming Platform", "Country", "Top Genre" y "Subscription Type".
 
+### Version 3
+- Se identificaron las variables de tipo numéricas (cuántitativas) y se realizaron sus respectivos análisis descriptivos.
+- Se elaboraron tablas dinámicas y gráficos de caja (box plots) para cada variable numérica.
+- En las variables "Age", "Number of Songs Liked", "Discover Weekly Engagement %" y "Repeat Song Rate %" se eliminaron todos los decimales de sus análisis descriptivos.
+- Se establecieron tablas dinámicas por rangos para cada variable numérica.
+- Los resultados de las tablas dinámicas se convirtieron al porcentaje total de las columnas para facilitar su interpretación.
+- Se respetó la escala por defecto de cada gráfico de columnas, conservando el eje de los porcentajes.
+### Version 4
+
+- Se identificaron las variables de tipo categóricas del dataset.
+- Se elaboraron tablas dinámicas para las variables: "Age_Range", "Country", "Streaming_Platform", "Discovery_Weekly_Categories", "Repeat_Song_Categories", "Music_Genre", "Subscription_Type", "Artist" y "Listening_time".
+- Se crearon gráficos de columnas para cada variable categórica respetando su escala por defecto.
+- Los gráficos se configuraron con porcentaje del total de columnas, manteniendo dos decimales por cada categoría.
+- Se añadieron dos tablas dinámicas adicionales con categorías independientes de "USER_ID": "Discovery_Weekly_Categories" y "Repeat_Song_Categories".
+
 
 ### Version 5
 
@@ -100,7 +115,43 @@ El conjunto de datos contiene información detallada sobre los usuarios, sus há
 
 ### **6. Análisis de conclusiones**
 
-### Análisis 3. Evaluación del Ecosistema de Streaming Musical.
+#### **Análisis nº 1**
+
+
+
+
+
+
+
+#### **Análisis nº 2: categóricas**
+- **Distribución de Horarios de Escucha (Listening_Time):**
+Los datos muestran que los usuarios prefieren escuchar música en la noche (34.90%), seguido por la tarde (32.68%) y la mañana (32.42%). Esta diferencia del 2.5% entre el horario más y menos popular es relativamente pequeña, lo que significa que la plataforma mantiene usuarios activos durante todo el día. El pico nocturno sugiere que la gente usa más el servicio para entretenimiento y relajación después del trabajo o estudios.
+- **Artistas Más Reproducidos (Most Played Artist)/Descubrimiento Semanal por Artista (Discover_Weekly_Categories):**
+no hay ningún artista dominante en la plataforma. Bad Bunny tiene el porcentaje más alto con solo 10.56%, seguido muy de cerca por Post Malone y Adele (ambos 10.38%). Esta distribución tan pareja (todos los artistas entre 9.54% y 10.56%) indica que los usuarios tienen gustos musicales muy variados y la plataforma no depende de un solo artista popular para mantener a sus usuarios.
+- **Problema con el Modelo de Suscripciones (Subscription_Type):**
+la plataforma tiene casi la misma cantidad de usuarios gratuitos (49.48%) que de pago (50.52%). Según el documento adjunto, esto representa un problema serio porque ambos tipos de usuarios escuchan prácticamente la misma cantidad de música. Esto significa que los usuarios no ven suficiente valor en pagar la suscripción premium, lo cual afecta directamente los ingresos de la empresa.
+
+- **Tasa de Repetición por Género Musical (Repeat Song Rate):**
+EDM, Jazz y Reggae tienen las tasas más altas de repetición (10.64% cada uno), mientras que Pop tiene la más baja (9.24%). Esto significa que las personas que escuchan EDM, Jazz y Reggae tienden a repetir más sus canciones favoritas, lo que indica mayor fidelidad a estos géneros. Esta información es valiosa para crear listas de reproducción y recomendaciones.
+
+- **Géneros Musicales Preferidos (Music_Genre):**
+la distribución de géneros es muy equilibrada: EDM y Jazz lideran con 10.64%, seguidos por Reggae (10.64%) y Rock (10.32%). El género menos popular es Pop con 9.24%. Esta distribución tan uniforme (diferencia máxima de 1.4%) muestra que la plataforma tiene una audiencia con gustos diversos, sin un género claramente dominante.
+
+- **Competencia entre Plataformas (Streaming_Platform):**
+Amazon Music lidera con 17.22%, seguido muy de cerca por Tidal (17.00%), YouTube (16.44%) y Spotify (16.54%). La diferencia entre la plataforma más y menos usada es de apenas 2.3%, lo que indica que los usuarios probablemente usan múltiples servicios de streaming simultáneamente. Esto representa un desafío para la retención de usuarios (mantener a los usuarios usando solo un servicio).
+- **Distribución por País (Country):**
+Australia tiene el porcentaje más alto de usuarios (10.52%), mientras que Germany tiene el más bajo (9.42%). Sin embargo, según el documento, Germany tiene el mayor consumo de horas a pesar de tener menos usuarios. La distribución es muy pareja entre todos los países (diferencia de solo 1.1%), lo que muestra una penetración global equilibrada sin mercados dominantes.
+- **Grupos de Edad (Age_Range):**
+Los adultos (Adults) representan el 40.40% de los usuarios, seguidos por adultos mayores (Seniors) con 35.40%. Los jóvenes adultos (Young Adults) solo son el 13.96% y los adolescentes (Youth) apenas 10.24%. Esto es sorprendente porque generalmente se asocia el streaming con usuarios jóvenes, pero aquí el 75% de usuarios tienen más de 35 años.
+
+
+
+
+
+
+
+
+#### **Análisis nº 3: Bi-variables**
 
 - **Crisis del Modelo de Monetización:**
 los resultados revelan una falla crítica en la estrategia de monetización de la plataforma. Los usuarios Free consumen prácticamente las mismas horas que los usuarios Premium (100.11% vs 99.9%), evidenciando la ausencia de una propuesta de valor diferenciadora efectiva para la suscripción paga. Adicionalmente, los usuarios Free utilizan más las funcionalidades de Discover Weekly (100.47%) que los Premium, indicando que las características distintivas del servicio pago no están generando el engagement esperado ni justificando la inversión de los usuarios.
