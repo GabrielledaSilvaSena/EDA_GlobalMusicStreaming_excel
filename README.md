@@ -21,10 +21,10 @@ En resumen, la creación de estos dashboards será clave para **mejorar la exper
 
 ### **3. Estructura Repo**
 ```bash
-├───────── **data**
+├───────── data
 ├──── Global_Music_Streaming_Listener_Preferences.csv #Datos originales
 ├──── Datos_transformados
-├───────── **Excels**
+├───────── Excels
 ├──── Carga_tranf_datos.xlsx #Excel con los Datos originales
 ├──── analisis_datos #Excel con el analisis
 ├──── dashboards #Excel con las tablas específicas usadas para los dashboards y los mismos
