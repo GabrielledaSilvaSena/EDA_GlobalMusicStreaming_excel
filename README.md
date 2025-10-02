@@ -115,17 +115,25 @@ El conjunto de datos contiene información detallada sobre los usuarios, sus há
 
 ### **6. Análisis de conclusiones**
 
-#### **Análisis nº 1**
+#### **Análisis nº 1: variables numéricas**
 
+- **Tasa de Repetición de Canciones (Repeat_Song_Rate):**
+la tasa de repetición muestra una media del 39% y mediana del 38%, con una alta desviación estándar del 23% que evidencia comportamientos muy diversos entre usuarios. Su curtosis negativa de -1 indica una distribución platicúrtica (más plana que la normal), confirmando que no existe un patrón dominante de repetición. El gráfico de columnas revela una distribución relativamente uniforme con ligera concentración en el rango 0.5-10.5%, mientras que el boxplot muestra simetría con algunos valores atípicos superiores. Esta alta dispersión sugiere la coexistencia de dos perfiles claramente diferenciados: usuarios "exploradores" que buscan constantemente música nueva y usuarios "tradicionales" que prefieren escuchar repetidamente sus canciones favoritas, lo cual requiere estrategias de personalización específicas para cada segmento.
 
+- **Engagement Semanal (Weekly_Engagement):**
+el engagement con las recomendaciones semanales presenta una media y mediana idénticas del 46%, con una desviación estándar del 26% que indica variabilidad considerable. La curtosis de -1 confirma una distribución platicúrtica, con el gráfico de columnas mostrando mayor concentración en los rangos medios (41-51%) y una caída notable en el engagement alto, donde solo el 10.40% de usuarios supera el 81% de engagement. El boxplot confirma simetría perfecta sin valores atípicos significativos. Esta distribución sugiere que la mayoría de usuarios interactúa moderadamente con las recomendaciones algorítmicas, indicando una oportunidad clara de optimización del sistema de recomendación para aumentar el engagement, especialmente considerando que esta función debería ser un diferenciador clave del servicio premium.
 
+- **Horas de Streaming Diarias (Hours_Streamed):**
+el consumo diario promedio de 5.2 horas (mediana 5.3) con desviación estándar de 2.9 horas muestra patrones de uso consistentes y saludables para la plataforma. La curtosis de -1.2 indica una distribución platicúrtica ligeramente más pronunciada, con el gráfico de columnas revelando que la mayoría de usuarios (21.24%) consume entre 5.2 y 7.2 horas diarias. El boxplot presenta simetría perfecta con el 50% central de usuarios entre 2.7 y 7.5 horas diarias, un rango intercuartílico relativamente estrecho que facilita la predicción de uso de recursos. Este consumo promedio considerable de más de 5 horas diarias indica un alto nivel de dependencia del servicio, lo cual es positivo para la retención pero también sugiere que los usuarios obtienen valor significativo incluso sin pagar premium.
 
+- **Canciones Marcadas como Favoritas (Songs_Liked):**
+Con una media y mediana perfectamente alineadas en 254 canciones y una desviación estándar alta de 146, esta variable muestra comportamientos de "colección" muy diversos. La curtosis de -1 indica distribución platicúrtica, pero el gráfico de columnas revela un patrón bimodal interesante: concentraciones en usuarios con pocas favoritas (1-100 canciones, 19.84%) y usuarios coleccionistas (401-500 canciones, 21.46%). El boxplot confirma distribución uniforme sin sesgos. Esta bimodalidad natural sugiere dos perfiles de usuario claramente diferenciados - "casuales" versus "coleccionistas" - que podrían aprovecharse para estrategias de marketing segmentadas y potencialmente diferentes límites de almacenamiento o funcionalidades según el plan de suscripción.
+- **Edad de Usuarios (Age)**:
+la edad promedio de 37 años (mediana idéntica) con desviación estándar de 14 años revela una base de usuarios significativamente más madura de lo esperado en servicios de streaming. La curtosis de -1 y la distribución casi uniforme entre grupos etarios (con ligera disminución solo en 53-62 años) confirma diversidad generacional sin concentraciones específicas. El boxplot muestra perfecta simetría con el rango intercuartílico entre 25-49 años. Esta madurez demográfica contradice completamente la percepción del streaming como servicio juvenil y representa una oportunidad estratégica importante: los usuarios de 30-50 años tienen típicamente mayor poder adquisitivo y estabilidad financiera, sugiriendo potencial no explotado para servicios premium de mayor valor si se diseñan adecuadamente para sus necesidades específicas.
 
-
-
-#### **Análisis nº 2: categóricas**
+#### **Análisis nº 2: variables categóricas**
 - **Distribución de Horarios de Escucha (Listening_Time):**
-Los datos muestran que los usuarios prefieren escuchar música en la noche (34.90%), seguido por la tarde (32.68%) y la mañana (32.42%). Esta diferencia del 2.5% entre el horario más y menos popular es relativamente pequeña, lo que significa que la plataforma mantiene usuarios activos durante todo el día. El pico nocturno sugiere que la gente usa más el servicio para entretenimiento y relajación después del trabajo o estudios.
+los datos muestran que los usuarios prefieren escuchar música en la noche (34.90%), seguido por la tarde (32.68%) y la mañana (32.42%). Esta diferencia del 2.5% entre el horario más y menos popular es relativamente pequeña, lo que significa que la plataforma mantiene usuarios activos durante todo el día. El pico nocturno sugiere que la gente usa más el servicio para entretenimiento y relajación después del trabajo o estudios.
 - **Artistas Más Reproducidos (Most Played Artist)/Descubrimiento Semanal por Artista (Discover_Weekly_Categories):**
 no hay ningún artista dominante en la plataforma. Bad Bunny tiene el porcentaje más alto con solo 10.56%, seguido muy de cerca por Post Malone y Adele (ambos 10.38%). Esta distribución tan pareja (todos los artistas entre 9.54% y 10.56%) indica que los usuarios tienen gustos musicales muy variados y la plataforma no depende de un solo artista popular para mantener a sus usuarios.
 - **Problema con el Modelo de Suscripciones (Subscription_Type):**
@@ -143,12 +151,6 @@ Amazon Music lidera con 17.22%, seguido muy de cerca por Tidal (17.00%), YouTube
 Australia tiene el porcentaje más alto de usuarios (10.52%), mientras que Germany tiene el más bajo (9.42%). Sin embargo, según el documento, Germany tiene el mayor consumo de horas a pesar de tener menos usuarios. La distribución es muy pareja entre todos los países (diferencia de solo 1.1%), lo que muestra una penetración global equilibrada sin mercados dominantes.
 - **Grupos de Edad (Age_Range):**
 Los adultos (Adults) representan el 40.40% de los usuarios, seguidos por adultos mayores (Seniors) con 35.40%. Los jóvenes adultos (Young Adults) solo son el 13.96% y los adolescentes (Youth) apenas 10.24%. Esto es sorprendente porque generalmente se asocia el streaming con usuarios jóvenes, pero aquí el 75% de usuarios tienen más de 35 años.
-
-
-
-
-
-
 
 
 #### **Análisis nº 3: Bi-variables**
