@@ -54,6 +54,7 @@ El conjunto de datos contiene información detallada sobre los usuarios, sus há
 -   **Most_Played_Artist**: Artista más reproducido por el usuario.
 
 -   **Minutes_Streamed_Per_Day**: Minutos promedio de escucha diaria.
+-   **Hours_Streamed_Per_Day**: Horas promedio de escucha diaria.
 
 -   **Number_of_Songs_Liked**: Cantidad de canciones marcadas como favoritas.
 
