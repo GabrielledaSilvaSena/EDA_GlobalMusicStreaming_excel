@@ -185,3 +185,84 @@ la correlación entre descubrimiento de nuevo contenido y repetición de cancion
 2.  **Diseño de Dashboards**: Crear dashboards interactivos que resalten las métricas más relevantes, con un enfoque en preferencias musicales y segmentación de usuarios.
 
 3.  **Presentación de Resultados**: Entregar un informe final con los insights obtenidos y recomendaciones para mejorar la experiencia del usuario y optimizar las estrategias de contenido.
+
+### **8. Insights obtenidos de los Dashboards**
+
+ ### **Dashboard de Monetización**
+
+**Problema Principal Identificado:**
+-	Los usuarios Free y Premium consumen casi las mismas horas de contenido (5.17 vs 5.16 horas diarias)
+- El engagement con Discover Weekly es similar: Free 46.0% vs Premium 45.6%
+- La plataforma tiene 49.5% usuarios gratuitos y 50.5% de pago
+- Conclusión: No hay suficiente diferencia entre el servicio gratuito y el de pago
+
+**Posibles Soluciones:**
+
+-	Limitar algunas funciones para usuarios Free (número de skips, calidad de audio)
+-	Ofrecer contenido exclusivo para Premium
+-	Crear un plan intermedio más económico
+
+### **Dashboard de Engagement**
+**Segmentos de Usuarios por Edad:**
+-	Young Adults (14%): Mayor consumo con 5.26 horas diarias
+- Adults (40.4%): Grupo más grande de usuarios
+- Seniors (35.4%): Buen consumo con 5.20 horas diarias
+- Youth (10.2%): Grupo más pequeño
+**Géneros Musicales:**
+- Los géneros están muy equilibrados (todos entre 9-11% de usuarios)
+- EDM, Jazz y Reggae tienen mayor tasa de repetición
+- Rock genera más horas de escucha
+**Horarios de Escucha:**
+- Night: 34.9% (mayor actividad)
+- Afternoon: 32.7%
+- Morning: 32.4%
+- La diferencia es pequeña, hay actividad todo el día
+### **Análisis por Países**
+**Top 5 Países:**
+1.	Australia: 10.5% de usuarios
+2.	South Korea: 10.3%
+3.	UK: 10.3% (mejor conversión a Premium: 52.3%)
+4.	Brazil: 10.2% (menor consumo: 4.90 horas)
+5.	Canada: 10.1% (mayor conversión a Premium: 52.9%)
+
+**Observaciones:**
+
+- La distribución es muy equilibrada entre países
+- UK y Canada tienen mejor conversión a Premium
+- Brazil tiene menor consumo diario
+**Métricas de Discover Weekly:**
+- Engagement promedio: 45.8%
+- Solo 17% de usuarios tienen "Very High" engagement
+- Tasa de repetición promedio: 38.7%
+- Interpretación: Las recomendaciones podrían mejorarse
+
+**KPIs Principales Identificados:**
+1.	Conversión Free a Premium: 50.5% actual
+2.	Horas de consumo diario: 5.16 horas promedio
+3.	Engagement Discover Weekly: 45.8%
+4.	Distribución por plataformas: Amazon Music lidera con 17.2%
+9. Recomendaciones Básicas
+
+**A Corto Plazo:**
+- Diferenciar mejor los servicios Free y Premium
+- Enfocar campañas en UK y Canada (mejor conversión)
+- Mejorar las recomendaciones de Discover Weekly
+
+**A Mediano Plazo:**
+- Investigar por qué Brazil tiene menor consumo
+- Crear contenido específico por horarios
+- Analizar la competencia (especialmente Amazon Music)
+
+### **9. Conclusiones**
+El análisis muestra que el principal problema es la falta de diferenciación entre usuarios Free y Premium. Ambos grupos usan el servicio de manera muy similar, lo que significa que no hay incentivos claros para pagar la suscripción.
+
+Los datos también revelan que:
+- La base de usuarios es diversa en edad y geografía
+- No hay un género musical dominante
+- Las plataformas compiten muy de cerca
+- Hay oportunidad de mejora en los algoritmos de recomendación
+
+Este proyecto me ha permitido practicar el análisis de datos con Excel, crear dashboards y extraer insights relevantes para la toma de decisiones empresariales.
+
+
+
